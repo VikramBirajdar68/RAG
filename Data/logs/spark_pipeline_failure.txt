@@ -1,0 +1,8 @@
+ERROR ExecutorLostFailure: Executor exited due to OutOfMemoryError
+ERROR Spark job failed at stage 4
+ERROR OutOfMemoryError: Java heap space
+ERROR Task failed again
+ERROR ExecutorLostFailure: Container killed by YARN for exceeding memory limits
+ERROR Stage failed due to repeated executor failures
+ERROR Job aborted due to stage failure
+ERROR Pipeline customer_daily_etl failed
