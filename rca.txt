@@ -1,0 +1,36 @@
+
+Error:ExecutorLostFailure due to OutOfMemoryError
+
+Cause:Executor memory (2GB) was insufficient to handle large joins and aggregations involving ~12 million records.
+
+Fix: Increased spark.executor.memory from 2G to 6G and Increased executor overhead memory
+
+
+
+Error:WARN GC overhead limit exceeded during aggregation stage
+
+Cause:Excessive garbage collection caused by large in-memory shuffle data and lack of intermediate persistence.
+
+Fix:Reduced shuffle partitions from 200 to 100 and Introduced checkpointing after heavy joins
+
+
+
+
+Error:WARN High shuffle spill detected
+
+Cause:Large shuffle operations caused data to spill to disk and increasing execution time and memory pressure.
+
+Fix:Optimized join strategy by broadcasting small dimension tables and Tuned spark.sql.shuffle.partitions
+
+
+
+
+Error:Repeated task retries with same configuration leading to repeated failures
+
+Cause:Retry mechanism restarted executors with unchanged memory and configuration, causing repeated failures instead of recovery.
+
+Fix:Updated retry logic to fail fast for memory-related errors and Added manual intervention alert after first failure
+
+
+
+ 

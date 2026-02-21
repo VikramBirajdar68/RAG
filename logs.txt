@@ -1,0 +1,8 @@
+2024-11-18 01:56:50 ERROR ExecutorLostFailure: Executor exited due to OutOfMemoryError
+2024-11-18 01:56:50 ERROR Spark job failed at stage 4
+2024-11-18 01:57:25 ERROR OutOfMemoryError: Java heap space
+2024-11-18 01:57:26 ERROR Task failed again
+2024-11-18 01:58:05 ERROR ExecutorLostFailure: Container killed by YARN for exceeding memory limits
+2024-11-18 01:58:06 ERROR Stage failed due to repeated executor failures
+2024-11-18 01:58:11 ERROR Job aborted due to stage failure
+2024-11-18 01:58:20 ERROR Pipeline customer_daily_etl failed

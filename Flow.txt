@@ -1,0 +1,17 @@
+Text (logs + RCA)
+   ↓
+Split into chunks
+   ↓
+Convert to embeddings
+   ↓
+Store in FAISS (vector DB)
+   ↓
+User question → embedding
+   ↓
+Similarity search
+   ↓
+Relevant text
+   ↓
+LLM (Hugging Face)
+   ↓
+Final answer
